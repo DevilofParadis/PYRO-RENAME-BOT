@@ -26,9 +26,9 @@ id_pattern = re.compile(r'^.\d+$')
 
 class Config(object):
     # pyro client config
-    API_ID    = os.environ.get("API_ID", "")
-    API_HASH  = os.environ.get("API_HASH", "")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "") 
+    API_ID    = os.environ.get("API_ID", "25374144")
+    API_HASH  = os.environ.get("API_HASH", "4f1efaef6551e30c5fa3a7b9dac7cf8e")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "6308987503:AAEOLVzONiDVS3oMyl7GzKyVEN-25iEEs1s") 
    
     # database config
     DB_NAME = os.environ.get("DB_NAME","pyro-botz")     
@@ -37,7 +37,7 @@ class Config(object):
     # other configs
     BOT_UPTIME  = time.time()
     START_PIC   = os.environ.get("START_PIC", "")
-    ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '').split()]
+    ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '5821581983', '6265459491').split()]
     FORCE_SUB   = os.environ.get("FORCE_SUB", "") 
     LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", None))
 
